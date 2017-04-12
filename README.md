@@ -1,7 +1,7 @@
 # Migration Evolution
 
 ## Background
-This repository demonstrates a possible evolution for
+This repository demonstrates a possible evolution and the work I did with many clients for
 a demonstration architecture. It assumes that the [bounded
 contexts](http://martinfowler.com/bliki/BoundedContext.html) for the application
 follow the boundaries outlined.
