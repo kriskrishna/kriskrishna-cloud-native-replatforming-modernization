@@ -8,8 +8,8 @@ the monolith and have performed portfolio analysis and snap analysis.
 
 My objective is to also demonstrate how to replatform and remodernize legacy apps so that properties can be externalized. 
 Moreover, how to use NFS or blob-store instead of filesystems, because of epheremal cloud architecture. Mainly, I'll show followings for replatforming:
-Spring Bootification, Managing Datasources, Removing Reads from the File System , Removing Persistence to the File System , Logging, Background Jobs with the Database , Background Jobs with AMQP, 
-Remove Instance Specific, Spring Bootification of Struts, Mavenization, and Gradling, EJB and PersistentContext (@EJB annotation)
+Spring Bootification, Managing Datasources, Removing Reads from the File System , Removing Persistence to the File System , Logging (ELK or Central logging), Spring Cloud Sleuth, Background Jobs with the Database, 
+Background Jobs with AMQP, Remove Instance Specific, Spring Bootification of Struts, Mavenization, and Gradling, EJB and PersistentContext (@EJB annotation)
 
 How to use Spring Cloud Configuration Service with legacy app (Non spring app) and modernize the app towards 12 Factor app.
 
@@ -22,7 +22,7 @@ Above can be applied using any PaaS platform: Cloud Foundry, Mesos (Marathon), A
 
 Evolution tags
 
-Tags are used to show the evolution of the application from one application that leverages components to a distributed system of microservices.
+Following Tags will be used to show the evolution of the application from one application that leverages components to a distributed system of microservices.
 
 
 # Monlith Application -> Replatforming -> Remodernize 
@@ -39,13 +39,17 @@ v4              Components
 v5              Applications
 v6              Services
 v7              One Application that leverages components
-v8              Components promoted to a micro-servicea
-v9              Add Eureka service discovery to allow easy service communication
-v10             Add Hystrix (Circuit Breakers) for service resiliency
-v11             Circuit Breaker Metric Aggregation
-v12             Add distributed configuration server
-v13             Add asynchronous processing with RabbitMQ
-v14             Zuul
+v8              One Non Spring Application that leverages config server for property management
+v9              Non Spring App/ Spring App using Minio Server as blob store intead of local file system
+v10             One Application that leverages components
+v11             Components promoted to a micro-services
+v12             One Application that uses non-sql db
+v13             Add Eureka service discovery to allow easy service communication
+v14             Add Hystrix (Circuit Breakers) for service resiliency
+v15             Circuit Breaker Metric Aggregation
+v16             Add distributed configuration server
+v17             Add asynchronous processing with RabbitMQ
+v18             Zuul
 ```
 
 ### Database Setup
