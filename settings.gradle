@@ -1,6 +1,0 @@
-include "applications/ums"
-include "applications/billing"
-include "components/billing"
-include "components/payments"
-include "components/subscriptions"
-include "components/email"
