@@ -15,19 +15,17 @@ How to use Spring Cloud Configuration Service with legacy app (Non spring app) a
 
 How to use Spring Boot and leverage the Spring Cloud Service Broker project.
 
-Above can be applied using any PaaS platform: Cloud Foundry, Mesos (Marathon), ElasticBeanStack, Kubernetes (GoogleCloud)
-
-How to use Non-SQL DB (Couchbase) and their health indicators properly while moderning th legacy apps. I am also a code-committer in spring-projects for this:
+How to use Non-SQL DB (Couchbase) and their health indicators properly while modernizing the legacy apps. I am also a code-committer in spring-projects for this:
 https://github.com/spring-projects/spring-boot/pulls/kriskrishna
+
+Above can be applied using any PaaS platform: Cloud Foundry, Mesos (Marathon), AWS ElasticBeanStack, Kubernetes (GoogleCloud)
 
 Evolution tags
 
 Tags are used to show the evolution of the application from one application that leverages components to a distributed system of microservices.
 
 
-# Application Continuum
-
-
+# Monlith Application -> Replatforming -> Remodernize 
 
 See Git tags for step-by-step notes.
 
@@ -41,7 +39,7 @@ v4              Components
 v5              Applications
 v6              Services
 v7              One Application that leverages components
-v8              Billing component promoted to a service
+v8              Components promoted to a micro-servicea
 v9              Add Eureka service discovery to allow easy service communication
 v10             Add Hystrix (Circuit Breakers) for service resiliency
 v11             Circuit Breaker Metric Aggregation
